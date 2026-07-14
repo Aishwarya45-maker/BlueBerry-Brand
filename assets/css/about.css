@@ -1,0 +1,139 @@
+/* ABOUT HERO */
+.about-hero{
+    min-height:80vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:60px 10%;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../images/banner/about-banner.jpg");
+    background-size:cover;
+    background-position:center;
+    color:white;
+}
+
+.about-text{
+    max-width:800px;
+}
+
+.about-text h1{
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.about-text p{
+    font-size:18px;
+    line-height:1.8;
+}
+
+/* STORY */
+.story{
+    padding:80px 10%;
+    text-align:center;
+}
+
+.story-box{
+    max-width:900px;
+    margin:auto;
+    background:#ffffff;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+.story h2{
+    font-size:38px;
+    margin-bottom:20px;
+}
+
+.story p{
+    font-size:18px;
+    line-height:1.8;
+}
+
+/* MISSION & VISION */
+.mission-container{
+    display:flex;
+    gap:30px;
+    justify-content:center;
+    padding:50px 10%;
+}
+
+.about-card{
+    padding:40px;
+    border-radius:20px;
+    background:#fff8f2;
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+    text-align:center;
+    flex:1;
+    transition:0.3s;
+}
+
+.about-card:hover{
+    transform:translateY(-10px);
+}
+
+.about-card h2{
+    margin-bottom:15px;
+}
+
+/* WHY SECTION */
+.why-section{
+    padding:80px 10%;
+    text-align:center;
+}
+
+.why-section h2{
+    font-size:40px;
+    margin-bottom:40px;
+}
+
+.why-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.why-card{
+    padding:35px;
+    border-radius:20px;
+    background:#fff8f2;
+    box-shadow:0 8px 25px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.why-card:hover{
+    transform:translateY(-10px);
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .about-text h1{
+        font-size:35px;
+    }
+
+    .mission-container{
+        flex-direction:column;
+    }
+
+    .why-grid{
+        grid-template-columns:1fr;
+    }
+}
+.story-box,
+.about-card,
+.why-card{
+    color:#333;
+}
+
+.story-box h2,
+.about-card h2,
+.why-card h3{
+    color:#222;
+}
+
+.story-box p,
+.about-card p,
+.why-card p{
+    color:#555;
+}

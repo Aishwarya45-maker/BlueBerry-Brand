@@ -1,0 +1,123 @@
+/* ==========================================
+   LOGO GLOW
+========================================== */
+
+@keyframes glow{
+
+    0%{
+
+        text-shadow:0 0 10px #FF4FA3;
+
+    }
+
+    50%{
+
+        text-shadow:
+        0 0 25px #FF4FA3,
+        0 0 45px #FF4FA3;
+
+    }
+
+    100%{
+
+        text-shadow:0 0 10px #FF4FA3;
+
+    }
+
+}
+
+.loader-logo{
+
+    animation:glow 2s infinite;
+
+}
+
+
+
+/* ==========================================
+   HERO IMAGE
+========================================== */
+
+@keyframes float{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-15px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.hero-image img{
+
+    animation:float 4s ease-in-out infinite;
+
+}
+
+
+
+/* ==========================================
+   BUTTON
+========================================== */
+
+.btn-primary,
+.btn-secondary{
+
+    transition:.35s;
+
+}
+
+.btn-primary:hover,
+.btn-secondary:hover{
+
+    transform:translateY(-4px);
+
+}
+
+
+
+/* ==========================================
+   NAVBAR LINKS
+========================================== */
+
+.nav-links a{
+
+    position:relative;
+
+}
+
+.nav-links a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    bottom:-5px;
+
+    width:0;
+    height:2px;
+
+    background:#FF4FA3;
+
+    transition:.3s;
+
+}
+
+.nav-links a:hover::after{
+
+    width:100%;
+
+}

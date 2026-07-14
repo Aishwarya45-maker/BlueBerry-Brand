@@ -1,0 +1,336 @@
+/* ==========================================
+   1200px
+========================================== */
+
+@media(max-width:1200px){
+
+    .hero-content h1{
+
+        font-size:5rem;
+
+    }
+
+}
+
+
+
+/* ==========================================
+   992px
+========================================== */
+
+@media(max-width:992px){
+
+    .hero{
+
+        flex-direction:column-reverse;
+        text-align:center;
+
+    }
+
+    .hero-buttons{
+
+        justify-content:center;
+
+    }
+
+    .hero-content p{
+
+        margin:auto auto 40px;
+
+    }
+
+}
+
+
+
+/* ==========================================
+   768px
+========================================== */
+
+@media(max-width:768px){
+
+    .menu-btn{
+
+        display:block;
+
+    }
+
+    .nav-links{
+
+        position:fixed;
+
+        top:80px;
+        left:-100%;
+
+        width:100%;
+        height:calc(100vh - 80px);
+
+        background:#070B24;
+
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+
+        gap:30px;
+
+        transition:.4s;
+
+    }
+
+    .nav-links.active{
+
+        left:0;
+
+    }
+
+    .hero-content h1{
+
+        font-size:4rem;
+
+    }
+
+}
+
+
+
+/* ==========================================
+   576px
+========================================== */
+
+@media(max-width:576px){
+
+    section{
+
+        padding:70px 5%;
+
+    }
+
+    .hero-content h1{
+
+        font-size:3rem;
+
+    }
+
+    .hero-buttons{
+
+        flex-direction:column;
+
+    }
+
+    .btn-primary,
+    .btn-secondary{
+
+        width:100%;
+        text-align:center;
+
+    }
+}
+/* ==========================================
+   CATEGORIES
+========================================== */
+@media(max-width:992px){
+    .category-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+@media(max-width:576px){
+    .category-grid{
+        grid-template-columns:1fr;
+    }
+    .category-card{
+        height:350px;
+    }
+}
+/* ==========================================
+   PRODUCTS
+========================================== */
+
+@media(max-width:992px){
+
+    .product-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media(max-width:576px){
+
+    .product-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .product-card img{
+
+        height:280px;
+
+    }
+
+}
+/* ==========================================
+   SALE BANNER
+========================================== */
+
+@media(max-width:768px){
+
+    .sale-content h1{
+
+        font-size:3rem;
+
+    }
+
+    .sale-content h2{
+
+        font-size:2rem;
+
+    }
+
+    .sale-content span{
+
+        font-size:1.5rem;
+
+    }
+
+}
+/* ==========================================
+   WHY CHOOSE US
+========================================== */
+
+@media(max-width:992px){
+
+    .feature-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media(max-width:576px){
+
+    .feature-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+/* ==========================================
+   TESTIMONIALS
+========================================== */
+
+@media(max-width:992px){
+
+    .testimonial-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+/* ==========================================
+   NEWSLETTER
+========================================== */
+
+@media(max-width:576px){
+
+    .newsletter-content h2{
+
+        font-size:2.3rem;
+
+    }
+
+    .newsletter-form{
+
+        flex-direction:column;
+
+    }
+
+    .newsletter-form input,
+    .newsletter-form button{
+
+        width:100%;
+
+    }
+
+}
+/* ==========================================
+   FOOTER
+========================================== */
+
+@media(max-width:992px){
+
+    .footer-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media(max-width:576px){
+
+    .footer-grid{
+
+        grid-template-columns:1fr;
+        text-align:center;
+
+    }
+
+    .social-icons{
+
+        justify-content:center;
+
+    }
+}
+/*======================================================
+FINAL RESPONSIVE
+======================================================*/
+
+@media(max-width:768px){
+
+    .menu-btn{
+        display:block;
+    }
+
+    .nav-links{
+        position:fixed;
+        top:80px;
+        right:-100%;
+        width:260px;
+        height:100vh;
+        background:#11183f;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:flex-start;
+        padding-top:40px;
+        gap:30px;
+        transition:.35s;
+    }
+
+    .hero{
+        flex-direction:column-reverse;
+        text-align:center;
+    }
+
+    .hero-content p{
+        margin:0 auto 35px;
+    }
+
+    .hero-buttons{
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+}
+@media(max-width:768px){
+
+    .logo img{
+        width:110px;
+    }
+
+}
